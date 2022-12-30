@@ -6,19 +6,16 @@
     <title>list</title>
 </head>
 <body>
-   
-    <!-- <p>playing</p>-->
+            <h1><%= cdate %> </h1>
 
-    <% for(var i=0;i<5;i++) %>
-    <% {  %>
-        <li> <%= add_p[i] %> </li>
-        <% }  %> 
+        <% for (var i =1; i <=add_p.length;  i++ ) { %>
+        <li> <%= add_p[i-1] %> </li>
+        <% } %>
+        
 
-    <!-- <p>eating</p>
-    <p>playing</p>
-    <p>dancing</p>
-    <p><%= add_p %></p>  -->
-    <form name="myForm" action="/" method="post">
+
+
+     <form name="myForm" action="/" method="post">
        
         <input name="add_input" type="text">
         <button type="submit">ADD</button>
