@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
 
     <title>list</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+        <div class="box" id="heading">
             <h1><%= cdate %> </h1>
+        </div>
+   
 
+    <div class="box" >
         <% for (var i =1; i <=add_p.length;  i++ ) { %>
-        <li> <%= add_p[i-1] %> </li>
+<div class="item">
+    <input type="checkbox">
+    <p> <%= add_p[i-1] %> </p> 
+</div>
+        
+        
         <% } %>
+        <form name="myForm" action="/" method="post">
+       
+            <input name="add_input" type="text" placeholder="NEW ITEM">
+            <button type="submit">+</button>
+            </form>
+        </div>
+            
         
 
 
 
-     <form name="myForm" action="/" method="post">
-       
-        <input name="add_input" type="text">
-        <button type="submit">ADD</button>
-        </form>
+    
+
+
+        
 
 </body>
 </html>
